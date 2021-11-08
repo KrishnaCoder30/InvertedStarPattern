@@ -1,0 +1,21 @@
+#include <stdio.h>
+ 
+int main()
+{
+	int a,b,c;
+	scanf("%d",&c);
+	// for 1 * at bottom of triangle c should be even else for 2 * at bottom c should be odd.
+	for(a=0;a<c;a++)
+	{
+		for(b=a-1;b>=0;b--)
+		{
+			printf(" ");
+			}
+		for(b=c+2-2*a;b>=0;b--)
+		{
+			printf("*");
+			}
+			printf("\n");
+			}
+}
+ 
